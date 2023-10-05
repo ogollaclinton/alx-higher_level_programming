@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for me in range(97,123):
-    print(f'{chr(me)}', end = '')
+"""Prints the alphabet in lowercase"""
+
+for l in range(97, 123):
+    print("{}".format(chr(l)), end="")

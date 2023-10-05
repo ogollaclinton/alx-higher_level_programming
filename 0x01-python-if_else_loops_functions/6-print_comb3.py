@@ -5,4 +5,4 @@ for me1 in range(10):
         if me1 == 8 and me2 == 9:
             print(f'{me1}{me2}')
         else:
-            print(f'{me1}{me2}, ', end='')
+            print("{:me1}{:me2}".format(me1. me2))
