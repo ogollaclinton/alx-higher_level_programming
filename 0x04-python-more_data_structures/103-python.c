@@ -42,7 +42,7 @@ void print_python_list(PyObject *p)
 	for (n = 0; n < ((PyVarObject *)p)->ob_size; n++)
 	{
 		printf("Element %d: %s\n", n,
-				((PyListObject *)p)->ob_item[x]->ob_type->tp_name);
+				((PyListObject *)p)->ob_item[n]->ob_type->tp_name);
 		if (!strcmp(((PyListObject *)p)->ob_item[n]->ob_type->tp_name, "bytes"))
 			print_python_bytes(((PyListObject *)p)->ob_item[n]);
 
