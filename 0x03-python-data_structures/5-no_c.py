@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
-def no_c(my_string):
-    str2 = my_string.translate({ord(i): None for i in 'cC'})
-    return str2
+def no_c(input_string):
+    return ''.join(char for char in input_string if char not in {'c', 'C'})
+
+
